@@ -72,3 +72,42 @@
   border-collapse: collapse;
   width: max-content;
 }
+/* Compact and centered cells */
+.table th,
+.table td {
+  padding: 6px 8px !important;
+  font-size: 0.85rem;
+  text-align: center;
+  vertical-align: middle !important;
+  border: 1px solid #ccc !important;
+  white-space: normal; /* allow text to wrap */
+  word-break: break-word; /* prevent overflow */
+}
+
+/* Make table take full width */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: auto;
+}
+
+/* Remove horizontal scrolling */
+.table-responsive {
+  overflow-x: visible;
+  white-space: normal;
+}
+
+/* Pastel row colors */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fef6e4; /* light pastel orange */
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #e0f7fa; /* light pastel blue */
+}
+
+/* Header style */
+.table thead th {
+  background-color: #343a40;
+  color: white;
+}
