@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Make cells smaller and center everything */
+.table th,
+.table td {
+  padding: 4px 8px !important;
+  font-size: 0.9rem;
+  border: 1px solid #ccc !important;
+  text-align: center;           /* horizontal centering */
+  vertical-align: middle !important; /* vertical centering */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Optional: header styling */
+.table th {
+  background-color: #343a40;
+  color: white;
+}
+
+/* Tight table layout */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+/* Force horizontal scroll for wide tables */
+.table-responsive {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Compact table design */
+.table th,
+.table td {
+  padding: 4px 6px !important;
+  font-size: 0.75rem;
+  text-align: center;
+  vertical-align: middle !important;
+  border: 1px solid #ccc !important;
+  white-space: nowrap;
+}
+
+/* Optional: Make table use all available horizontal space */
+.table {
+  table-layout: auto;
+  width: max-content;
+}
+/* Pastel alternating rows */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fef6e4; /* Light pastel orange */
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #e0f7fa; /* Light pastel blue */
+}
+
+/* Keep center alignment and thin borders */
+.table th,
+.table td {
+  padding: 4px 6px !important;
+  font-size: 0.75rem;
+  text-align: center;
+  vertical-align: middle !important;
+  border: 1px solid #ccc !important;
+  white-space: nowrap;
+}
+
+/* Header style */
+.table thead th {
+  background-color: #343a40;
+  color: white;
+}
+
+/* Table settings */
+.table {
+  border-collapse: collapse;
+  width: max-content;
 }
